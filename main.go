@@ -29,8 +29,6 @@ import (
 	"strings"
 	"syscall"
 	"time"
-
-	"github.com/ghodss/yaml"
 )
 
 type testCase struct {
@@ -105,7 +103,7 @@ var (
 	// program exit codes.
 	SUCCESS_CODE              = 0
 	INITIALIZATION_ERROR_CODE = 1
-	TEST_FAILURE_CODE         = 2
+	TEST_FAILURE_CODE         = 4
 
 	// File path constants
 	artifactsPath     = filepath.Join(os.Getenv("WORKSPACE"), "_artifacts")
