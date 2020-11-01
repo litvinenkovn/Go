@@ -13,7 +13,7 @@ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 See the License for the specific language governing permissions and
 limitations under the License.
 */
-
+// TEST
 package main
 
 import (
@@ -74,7 +74,7 @@ func writeXML(dump string, start time.Time) {
 	log.Printf("Saved XML output to %s.", path)
 }
 
-// return f(), adding junit xml testcase result for name
+//// //return f(), adding junit xml testcase result for name
 func xmlWrap(name string, f func() error) error {
 	start := time.Now()
 	err := f()
